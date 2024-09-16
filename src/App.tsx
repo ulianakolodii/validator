@@ -35,7 +35,7 @@ const App = () => {
         <UploadButton onChange={handleFileChange}>Upload file</UploadButton>
         {validPasswordsCount && (
           <Info>
-            valid password: <strong>{validPasswordsCount}</strong>
+            valid passwords: <strong>{validPasswordsCount}</strong>
           </Info>
         )}
       </div>
