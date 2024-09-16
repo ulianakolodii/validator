@@ -1,6 +1,7 @@
 import "./App.css";
-import React, { ChangeEvent } from "react";
+import React, { ChangeEvent, useState } from "react";
 import UploadButton from "./components/UploadButton/UploadButton.tsx";
+import Info from "./components/Info/Info.tsx";
 
 const App = () => {
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -21,6 +22,9 @@ const App = () => {
     <div className="App">
       <div className="wrap">
         <UploadButton onChange={handleFileChange}>Upload file</UploadButton>
+        <Info>
+          valid password: <strong>0</strong>
+        </Info>
       </div>
     </div>
   );
